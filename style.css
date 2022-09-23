@@ -19,8 +19,8 @@ body {
   padding: 16px;
 }
 
-nav { 
-  color: #6070FF;
+nav {  
+  color: #6070ff;
   width: 100%;
 }
 
@@ -64,7 +64,7 @@ p {
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
-  color:#6070ff
+  color: #6070ff;
 }
 
 a {
@@ -72,8 +72,8 @@ a {
 }
 
 a:hover {
-  text-decoration:none; 
-  cursor:pointer;  
+  text-decoration: none; 
+  cursor: pointer;  
 }
 
 #logo:active {
