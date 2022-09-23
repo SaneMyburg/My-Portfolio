@@ -6,7 +6,7 @@
 body {
   display: flex;
   justify-content: center;
-  font-family: 'Poppins';
+  font-family: 'Popins', sans-serif;
 }
 
 .app-container {
@@ -18,10 +18,12 @@ body {
   justify-content: space-between;
   padding: 16px;
 }
+
 nav { 
   color: #6070FF;
   width: 100%;
 }
+
 .app-greeting {
   background-image: url("./images/background-pic.svg");
   display: flex;
@@ -33,32 +35,38 @@ nav {
   overflow: hidden;
   gap: 12px;
 }
+
 .socials {
   display: inline-flex;
   gap: 10px;
 }
+
 #lets-connect {
   color: #7f8cff;
 }
+
 h1 {
   color: #172b4d;
 }
+
 p {
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #344563;
 }
+
 #logo {
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
   color:#6070ff
 }
+
 a {
   text-decoration: none;
 }
@@ -67,14 +75,17 @@ a:hover {
   text-decoration:none; 
   cursor:pointer;  
 }
+
 #logo:active {
   color: #6070ff;
 }
+
 i {
   font-size: 25px;
   color: #505f79;
   cursor: pointer;
 }
+
 #menu-icon {
   color: #6070ff;
 }
