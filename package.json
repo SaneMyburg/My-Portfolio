@@ -1,0 +1,28 @@
+{
+  "name": "test3",
+  "version": "1.0.0",
+  "description": "Hi! I'm a fullstack web developer and this is my portfolio project in which I'm going to show my resume, my favorite projects and where to contact me.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "hint": "^7.1.2",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.21.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kweeka1/Portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Kweeka1/Portfolio/issues"
+  },
+  "homepage": "https://github.com/Kweeka1/Portfolio#readme"
+}
