@@ -6,8 +6,9 @@
 body {
   display: grid;
   justify-content: center;
-  font-family: 'Popins', sans-serif;
+  font-family: 'Poppins', sans-serif;
   overflow-y: scroll;
+  background-color: #fbfbfb;
 }
 
 .app-container {
@@ -53,8 +54,7 @@ h1 {
 }
 
 p {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -62,7 +62,7 @@ p {
 }
 
 #logo {
-  font-family: 'Poppins', sans-serif;
+
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -72,6 +72,8 @@ p {
 
 a {
   text-decoration: none;
+  font-weight: 600;
+  font-size: 13px;
 }
 
 a:hover {
@@ -91,10 +93,74 @@ i {
 #menu-icon {
   color: #6070ff;
 }
+.project-title {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 12px;
+  
+}
 .projects {
   display: flex;
-  background-color: #eae2e2;
+  flex-direction: column;
   width: 327px;
   justify-content: center;
   padding: 16px;
+  background-color: #ffffff;
+  border-radius: 16px;
+}
+h2 {
+  color: #172b4d;
+  font-weight: 700;
+  font: size 32px; ;
+}
+.list {
+  display: inline-flex;
+  list-style-type: none;
+  gap: 10px;
+  padding-left: 0;
+  padding-right: 10px;
+}
+#canopy {
+  color: #344563;
+  font-weight: 600;
+}
+#backend {
+  color:  #7a869a;
+  font-size: 13px;
+  font-weight: 600;
+}
+.description {
+  font-weight: 400;
+  font-size: 15px;
+}
+.program-languages {
+  display: inline-flex;
+  list-style-type: none;
+  gap: 10px;
+  padding-left: 0;
+}
+#language-name {
+  background-color: #eBebff;
+  color: #6070ff;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 12px 4px 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+
+}
+.see-projects {
+  font-size: 17px;
+  font-weight: 500;
+  color: #396df2;
+  border: 1px solid #396df2 ;
+  margin-top: 20px;
+  padding: 5px;
+  border-radius: 8px;
+}
+.about {
+  display: flex;
+  width: 375px;
+  margin-top: 114px;
 }
