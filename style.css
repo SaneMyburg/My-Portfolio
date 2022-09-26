@@ -4,7 +4,7 @@
 }
 
 body {
-  display: flex;
+  display: grid;
   justify-content: center;
   font-family: 'Popins', sans-serif;
   overflow-y: scroll;
@@ -88,12 +88,13 @@ i {
   color: #505f79;
   cursor: pointer;
 }
-
 #menu-icon {
   color: #6070ff;
 }
 .projects {
-  display: grid;
-  background-color: #e5e5e5;
+  display: flex;
+  background-color: #eae2e2;
   width: 327px;
+  justify-content: center;
+  padding: 16px;
 }
