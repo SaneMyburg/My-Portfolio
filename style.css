@@ -7,6 +7,7 @@ body {
   display: flex;
   justify-content: center;
   font-family: 'Popins', sans-serif;
+  overflow-y: scroll;
 }
 
 .app-container {
@@ -90,4 +91,9 @@ i {
 
 #menu-icon {
   color: #6070ff;
+}
+.projects {
+  display: grid;
+  background-color: #e5e5e5;
+  width: 327px;
 }
