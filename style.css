@@ -173,32 +173,37 @@ h2 {
   color: #172b4d;
 }
 #intro {
-
   padding-bottom: 10px;
   font-size: 16px;
   font-weight: 400;
 }
 .about-socials {
+
   padding-top: 15px;
   padding-bottom: 12px;
 }
 .language {
+
   display: flex;
   justify-content: space-between;
   padding-bottom: 20px;
   margin-top: 12px;
 }
 .list-languages {
-  display: flex; 
+
+  display: flex;
   align-items: center;
-  background-color: #F7F7F9;
+  background-color: #f7f7f9;
   border-radius: 8px;
   margin-bottom: 12px;
 }
+
 #list-type {
   list-style-type: none;
-  padding-left: 0px;  
+  padding-left: 0px;
+
 }
+
 .line-colour {
   color: #cecfd0;
 }
