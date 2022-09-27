@@ -8,11 +8,16 @@ body {
   justify-content: center;
   font-family: 'Poppins', sans-serif;
   overflow-y: scroll;
-  
+  background-color:rgb(237, 237, 237);
 }
 
 .app-container {
   width: 327px;
+  background-color: #efeeee;
+}
+.app-items {
+  background-color: #ffffff;
+  border-bottom-left-radius: 60px;
 }
 
 .app-nav {
@@ -103,8 +108,8 @@ i {
 .projects {
   display: flex;
   flex-direction: column;
-  width: 327px;
   justify-content: center;
+  width: 327px;
   padding: 16px;
   background-color: #ffffff;
   border-radius: 16px;
@@ -160,11 +165,24 @@ h2 {
   padding: 5px;
   border-radius: 8px;
 }
-.about {
+.about-container {
   display: flex;
+  flex-direction: column;
   width: 327px;
   margin-top: 114px;
   padding: 16px;
   background-color: #ffffff;
   border-top-right-radius: 60px;
+}
+.about-heading {
+  padding-top: 40px;
+  font-weight: 700;
+  font-size: 30px;
+  color: #172b4d;
+}
+#intro {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  font-weight: 400;
 }
