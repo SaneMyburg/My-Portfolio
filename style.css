@@ -6,15 +6,16 @@
 body {
   font-family: 'Poppins', sans-serif;
   overflow-y: scroll;
-  background-color:rgb(237, 237, 237);
+  background-color: rgb(237, 237, 237);
 }
 
 .app-container {
   width: 327px;
   background-color: #efeeee;
 }
+
 .app-items {
-  background-color: #ffffff;
+  background-color: #fff;
   border-bottom-left-radius: 60px;
 }
 
@@ -162,7 +163,7 @@ h2 {
   display: grid;
   margin-top: 114px;
   padding: 16px;
-  background-color: #ffffff;
+  background-color: #fff;
   border-top-right-radius: 60px;
 }
 .about-heading {
@@ -189,6 +190,7 @@ h2 {
 }
 .list-languages {
   display: flex; 
+  align-items: center;
   background-color: #F7F7F9;
   border-radius: 8px;
   margin-bottom: 12px;
@@ -197,7 +199,6 @@ h2 {
   list-style-type: none;
   padding-left: 0px;  
 }
-hr {
+.line-colour {
   color: #cecfd0;
 }
-
