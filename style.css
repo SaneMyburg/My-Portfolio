@@ -4,8 +4,6 @@
 }
 
 body {
-  display: grid;
-  justify-content: center;
   font-family: 'Poppins', sans-serif;
   overflow-y: scroll;
   background-color:rgb(237, 237, 237);
@@ -33,9 +31,7 @@ nav {
 
 .app-greeting {
   background-image: url("./images/background-pic.svg");
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: grid;
   width: 327px;
   padding: 100px 30px;
   background-size: cover;
@@ -106,10 +102,7 @@ i {
   
 }
 .projects {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 327px;
+
   padding: 16px;
   background-color: #ffffff;
   border-radius: 16px;
@@ -166,9 +159,7 @@ h2 {
   border-radius: 8px;
 }
 .about-container {
-  display: flex;
-  flex-direction: column;
-  width: 327px;
+  display: grid;
   margin-top: 114px;
   padding: 16px;
   background-color: #ffffff;
@@ -181,8 +172,32 @@ h2 {
   color: #172b4d;
 }
 #intro {
-  padding-top: 10px;
+
   padding-bottom: 10px;
   font-size: 16px;
   font-weight: 400;
 }
+.about-socials {
+  padding-top: 15px;
+  padding-bottom: 12px;
+}
+.language {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  margin-top: 12px;
+}
+.list-languages {
+  display: flex; 
+  background-color: #F7F7F9;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+#list-type {
+  list-style-type: none;
+  padding-left: 0px;  
+}
+hr {
+  color: #cecfd0;
+}
+
