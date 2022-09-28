@@ -209,7 +209,7 @@ h2 {
 
 #list-type {
   list-style-type: none;
-  padding-left: 0px;
+  padding-left: 0%;
 }
 
 .line-colour {
@@ -217,7 +217,6 @@ h2 {
 }
 
 #style {
-
   padding-left: 15px;
   font-size: 15px;
   font-weight: bold;
