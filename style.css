@@ -178,7 +178,6 @@ h2 {
   font-weight: 400;
 }
 .about-socials {
-
   padding-top: 15px;
   padding-bottom: 12px;
 }
@@ -201,19 +200,26 @@ h2 {
 #list-type {
   list-style-type: none;
   padding-left: 0px;
-
 }
-
 .line-colour {
   color: #cecfd0;
 }
 #style {
+
   padding-left: 15px;
   font-size: 15px;
-  font-weight: 500;
+  font-weight: bold;
   color: #253858;
 }
 #language-image {
+
   padding-left: 5px;
   padding-top: 5px;
+}
+.framework {
+  padding-top: 10px;
+}
+#down-arrow {
+  padding-top: 10px;
+  padding-right: 30px;
 }
