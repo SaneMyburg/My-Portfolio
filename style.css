@@ -54,15 +54,15 @@ nav {
 h1 {
   color: #172b4d;
 }
-p {
 
+p {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #344563;
 }
-#logo {
 
+#logo {
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -90,63 +90,63 @@ i {
   color: #505f79;
   cursor: pointer;
 }
+
 #menu-icon {
   color: #6070ff;
 }
+
 .project-title {
   display: flex;
   flex-direction: column;
   padding: 16px;
   gap: 12px;
-  
 }
-.projects {
 
+.projects {
   padding: 16px;
   background-color: #fff;
   border-radius: 16px;
   margin-top: 100px;
 }
+
 h2 {
   color: #172b4d;
   font-weight: 700;
-  font-size: 32px; 
+  font-size: 32px;
 }
 
 .list {
-
   display: inline-flex;
   list-style-type: none;
   gap: 10px;
   padding-left: 0;
   padding-right: 10px;
 }
-#canopy {
 
+#canopy {
   color: #344563;
   font-weight: 600;
 }
-#backend {
 
+#backend {
   color: #7a869a;
   font-size: 13px;
   font-weight: 600;
 }
 
 .description {
-
   font-weight: 400;
   font-size: 15px;
 }
-.program-languages {
 
+.program-languages {
   display: inline-flex;
   list-style-type: none;
   gap: 10px;
   padding-left: 0;
 }
-#language-name {
 
+#language-name {
   background-color: #ebebff;
   color: #6070ff;
   font-size: 12px;
@@ -155,8 +155,8 @@ h2 {
   border-radius: 8px;
   margin-bottom: 10px;
 }
-.see-projects {
 
+.see-projects {
   font-size: 17px;
   font-weight: 500;
   color: #396df2;
@@ -165,41 +165,41 @@ h2 {
   padding: 5px;
   border-radius: 8px;
 }
-.about-container {
 
+.about-container {
   display: grid;
   margin-top: 114px;
   padding: 16px;
   background-color: #fff;
   border-top-right-radius: 60px;
 }
-.about-heading {
 
+.about-heading {
   padding-top: 40px;
   font-weight: 700;
   font-size: 30px;
   color: #172b4d;
 }
-#intro {
 
+#intro {
   padding-bottom: 10px;
   font-size: 16px;
   font-weight: 400;
 }
-.about-socials {
 
+.about-socials {
   padding-top: 15px;
   padding-bottom: 12px;
 }
-.language {
 
+.language {
   display: flex;
   justify-content: space-between;
   padding-bottom: 20px;
   margin-top: 12px;
 }
-.list-languages {
 
+.list-languages {
   display: flex;
   align-items: center;
   background-color: #f7f7f9;
@@ -211,27 +211,28 @@ h2 {
   list-style-type: none;
   padding-left: 0px;
 }
+
 .line-colour {
   color: #cecfd0;
 }
-#style {
 
+#style {
   padding-left: 15px;
   font-size: 15px;
   font-weight: bold;
   color: #253858;
 }
-#language-image {
 
+#language-image {
   padding-left: 5px;
   padding-top: 5px;
 }
-#framework {
 
+#framework {
   padding-top: 20px;
 }
-#down-arrow {
 
+#down-arrow {
   padding-top: 10px;
   padding-right: 30px;
 }
