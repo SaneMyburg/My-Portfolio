@@ -54,7 +54,6 @@ nav {
 h1 {
   color: #172b4d;
 }
-
 p {
 
   font-weight: 400;
@@ -62,7 +61,6 @@ p {
   line-height: 24px;
   color: #344563;
 }
-
 #logo {
 
   font-style: normal;
@@ -105,16 +103,18 @@ i {
 .projects {
 
   padding: 16px;
-  background-color: #ffffff;
+  background-color: #fff;
   border-radius: 16px;
   margin-top: 100px;
 }
 h2 {
   color: #172b4d;
   font-weight: 700;
-  font: size 32px; ;
+  font-size: 32px; 
 }
+
 .list {
+
   display: inline-flex;
   list-style-type: none;
   gap: 10px;
@@ -122,44 +122,51 @@ h2 {
   padding-right: 10px;
 }
 #canopy {
+
   color: #344563;
   font-weight: 600;
 }
 #backend {
-  color:  #7a869a;
+
+  color: #7a869a;
   font-size: 13px;
   font-weight: 600;
 }
+
 .description {
+
   font-weight: 400;
   font-size: 15px;
 }
 .program-languages {
+
   display: inline-flex;
   list-style-type: none;
   gap: 10px;
   padding-left: 0;
 }
 #language-name {
-  background-color: #eBebff;
+
+  background-color: #ebebff;
   color: #6070ff;
   font-size: 12px;
   font-weight: 600;
   padding: 4px 12px 4px 12px;
   border-radius: 8px;
   margin-bottom: 10px;
-
 }
 .see-projects {
+
   font-size: 17px;
   font-weight: 500;
   color: #396df2;
-  border: 1px solid #396df2 ;
+  border: 1px solid #396df2;
   margin-top: 20px;
   padding: 5px;
   border-radius: 8px;
 }
 .about-container {
+
   display: grid;
   margin-top: 114px;
   padding: 16px;
@@ -167,17 +174,20 @@ h2 {
   border-top-right-radius: 60px;
 }
 .about-heading {
+
   padding-top: 40px;
   font-weight: 700;
   font-size: 30px;
   color: #172b4d;
 }
 #intro {
+
   padding-bottom: 10px;
   font-size: 16px;
   font-weight: 400;
 }
 .about-socials {
+
   padding-top: 15px;
   padding-bottom: 12px;
 }
@@ -216,10 +226,12 @@ h2 {
   padding-left: 5px;
   padding-top: 5px;
 }
-.framework {
-  padding-top: 10px;
+#framework {
+
+  padding-top: 20px;
 }
 #down-arrow {
+
   padding-top: 10px;
   padding-right: 30px;
 }
