@@ -10,13 +10,15 @@ body {
 }
 
 .app-container {
-  width: 327px;
-  background-color: #efeeee;
+  display: grid;
+  width: 375px;
+  background: #e5e5e5;
 }
 
 .app-items {
   background-color: #fff;
   border-bottom-left-radius: 60px;
+  margin-bottom: 114px;
 }
 
 .app-nav {
@@ -33,7 +35,6 @@ nav {
 .app-greeting {
   background-image: url("./images/background-pic.svg");
   display: grid;
-  width: 327px;
   padding: 100px 30px;
   background-size: cover;
   overflow: hidden;
@@ -95,6 +96,16 @@ i {
   color: #6070ff;
 }
 
+.projects-container {
+  display: grid;
+  justify-items: center;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-auto-columns: 327px;
+  grid-auto-rows: 600px;
+  grid-row-gap: 88px;
+  padding-left: 24px;
+}
+
 .project-title {
   display: flex;
   flex-direction: column;
@@ -103,13 +114,13 @@ i {
 }
 
 .projects {
+  justify-self: center;
   padding: 16px;
   background-color: #fff;
   border-radius: 16px;
-  margin-top: 100px;
 }
 
-h2 {
+h6 {
   color: #172b4d;
   font-weight: 700;
   font-size: 32px;
@@ -161,7 +172,7 @@ h2 {
   font-weight: 500;
   color: #396df2;
   border: 1px solid #396df2;
-  margin-top: 20px;
+  margin-top: 30px;
   padding: 5px;
   border-radius: 8px;
 }
