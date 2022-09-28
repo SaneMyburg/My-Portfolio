@@ -172,9 +172,23 @@ h6 {
   font-weight: 500;
   color: #396df2;
   border: 1px solid #396df2;
-  margin-top: 30px;
   padding: 5px;
   border-radius: 8px;
+}
+
+
+.see-projects:disabled {
+  background: #c1c7d0;
+  color: gray;
+}
+
+.see-projects:hover {
+  color: white;
+  background: #6070ff;
+}
+.see-projects:active {
+  color: white;
+  background: #2560f5;
 }
 
 .about-container {
@@ -201,6 +215,7 @@ h6 {
 .about-socials {
   padding-top: 15px;
   padding-bottom: 12px;
+  padding-left: 10px;
 }
 
 .language {
@@ -219,6 +234,8 @@ h6 {
 }
 
 #list-type {
+  color: #000;
+  font-weight: bold;
   list-style-type: none;
   padding-left: 0%;
 }
@@ -246,4 +263,12 @@ h6 {
 #down-arrow {
   padding-top: 10px;
   padding-right: 30px;
+}
+
+#border-line {
+  border-bottom: 1px solid #dfe1e6;
+}
+
+#frame {
+  padding-top: 20px;
 }
