@@ -176,7 +176,6 @@ h6 {
   border-radius: 8px;
 }
 
-
 .see-projects:disabled {
   background: #c1c7d0;
   color: gray;
@@ -186,6 +185,7 @@ h6 {
   color: white;
   background: #6070ff;
 }
+
 .see-projects:active {
   color: white;
   background: #2560f5;
