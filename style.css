@@ -12,7 +12,7 @@ body {
 .app-container {
   display: grid;
   width: 375px;
-  background: #e5e5e5;
+  background: #fff;
 }
 
 .app-items {
@@ -271,4 +271,12 @@ h6 {
 
 #frame {
   padding-top: 20px;
+}
+
+.contact-me {
+  display: flex;
+  width: 375px;
+  background-image: url(./images/contact-back.svg);
+  height: 779px;
+  margin-top: 6rem;
 }
