@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   overflow-y: scroll;
   background-color: rgb(237, 237, 237);
 }
@@ -275,8 +275,23 @@ h6 {
 
 .contact-me {
   display: flex;
+  justify-content: center;
   width: 375px;
   background-image: url(./images/contact-back.svg);
   height: 779px;
   margin-top: 6rem;
+}
+
+.contact-info {
+  padding-top: 7rem;
+  margin: 0 24px;
+  text-align: center;
+  color: #fff;
+}
+
+.contact-info p {
+  color: #fff;
+  line-height: 1.8rem;
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
 }
