@@ -12,7 +12,7 @@ body {
 .app-container {
   display: grid;
   width: 375px;
-  background: #fff;
+  background:#E5E5E5 ;
 }
 
 .app-items {
@@ -197,6 +197,7 @@ h6 {
   padding: 16px;
   background-color: #fff;
   border-top-right-radius: 60px;
+  
 }
 
 .about-heading {
@@ -223,6 +224,7 @@ h6 {
   justify-content: space-between;
   padding-bottom: 20px;
   margin-top: 12px;
+  margin-bottom: 30px;
 }
 
 .list-languages {
@@ -230,7 +232,7 @@ h6 {
   align-items: center;
   background-color: #f7f7f9;
   border-radius: 8px;
-  margin-bottom: 12px;
+  margin-bottom: 30px;
 }
 
 #list-type {
@@ -275,6 +277,7 @@ h6 {
 
 .contact-me {
   display: flex;
+  background-color: #fff;
   justify-content: center;
   width: 375px;
   background-image: url(./images/contact-back.svg);
