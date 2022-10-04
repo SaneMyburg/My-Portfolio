@@ -337,14 +337,14 @@ h6 {
 
 .message-input {
   height: 170px;
-  color:#b3bac5 ;
+  color: #b3bac5;
   font-size: 15px;
   padding-right: 24px;
 }
 
 .submitBtn {
   display: flex;
-  margin-left:-35px;
+  margin-left: -35px;
   padding: 12px 40px;
   color: #6070ff;
   border-radius: 0.5rem;
