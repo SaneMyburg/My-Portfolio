@@ -12,7 +12,7 @@ body {
 .app-container {
   display: grid;
   width: 375px;
-  background:#E5E5E5 ;
+  background: #e5e5e5;
 }
 
 .app-items {
@@ -196,8 +196,8 @@ h6 {
   margin-top: 114px;
   padding: 16px;
   background-color: #fff;
+  height: 100%;
   border-top-right-radius: 60px;
-  
 }
 
 .about-heading {
@@ -297,4 +297,28 @@ h6 {
   line-height: 1.8rem;
   margin-top: 1.5rem;
   font-size: 1.2rem;
+}
+.form-input {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2.5rem;
+  text-decoration: none;
+  list-style: none;
+}
+.text-input {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-family: Poppins;
+}
+.submitBtn {
+  display: flex;
+  margin-left: 2.5rem;
+  padding: 10px 35px;
+  color: #6070ff;
+  border-radius: 0.5rem;
+  border: none;
+  border: 1px solid #6070ff;
 }
