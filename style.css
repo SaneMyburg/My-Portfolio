@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   overflow-y: scroll;
   background-color: rgb(237, 237, 237);
 }
@@ -196,6 +196,7 @@ h6 {
   margin-top: 114px;
   padding: 16px;
   background-color: #fff;
+  height: 100%;
   border-top-right-radius: 60px;
 }
 
@@ -223,6 +224,7 @@ h6 {
   justify-content: space-between;
   padding-bottom: 20px;
   margin-top: 12px;
+  margin-bottom: 30px;
 }
 
 .list-languages {
@@ -230,7 +232,7 @@ h6 {
   align-items: center;
   background-color: #f7f7f9;
   border-radius: 8px;
-  margin-bottom: 12px;
+  margin-bottom: 30px;
 }
 
 #list-type {
@@ -271,4 +273,99 @@ h6 {
 
 #frame {
   padding-top: 20px;
+}
+
+.contact-me {
+  display: flex;
+  background-color: #fff;
+  justify-content: center;
+  width: 375px;
+  background-image: url(./images/contact-back.svg);
+  height: 779px;
+  margin-top: 100px;
+}
+
+.contact-info {
+  padding-top: 100px;
+  text-align: center;
+  color: #fff;
+  margin-left: 0%;
+}
+
+.contact-info h3 {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.contact-info p {
+  color: #fff;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  padding-bottom: 10px;
+}
+
+.form-input {
+  display: flex;
+  width: 327px;
+  flex-direction: column;
+  margin-top: 2.5rem;
+  text-decoration: none;
+  list-style: none;
+  margin-left: 0%;
+}
+
+.text-input,
+.message-input {
+  width: 327px;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+  margin-left: -35px;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+.text-input {
+  font-size: 17px;
+  color: #172b4d;
+  line-height: 20px;
+  height: 48px;
+}
+
+.message-input {
+  height: 170px;
+  color: #b3bac5;
+  font-size: 15px;
+  padding-right: 24px;
+}
+
+.submitBtn {
+  display: flex;
+  margin-left: -35px;
+  padding: 12px 40px;
+  color: #6070ff;
+  border-radius: 0.5rem;
+  border: none;
+  border: 1px solid #6070ff;
+  font-size: 17px;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+}
+
+.submitBtn:enabled {
+  background-color: #fff;
+  color: #6070ff;
+}
+
+.submitBtn:hover {
+  background-color: #6070ff;
+  color: #fff;
+}
+
+.submitBtn:disabled {
+  background-color: #c1c7d0;
+  color: gray;
 }
