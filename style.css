@@ -389,7 +389,7 @@ h6 {
     overflow: hidden;
     gap: 12px;
   }
-  
+
   .projects-container {
     display: grid;
     justify-items: center;
@@ -435,7 +435,7 @@ h6 {
     padding-left: 260px;
     padding-right: 260px;
   }
-   
+  
   .app-nav {
     display: flex;
     justify-content: space-evenly;
@@ -474,7 +474,8 @@ h6 {
     font-size: 48px;
     line-height: 60px;
     padding-top: 300px;
-    padding-bottom: 20px; 
+    padding-bottom: 20px;
+
   }
 
   .socials {
@@ -511,7 +512,6 @@ h6 {
   }
 
   #project-1,
-
   #project-2 {
     display: flex;
     flex-direction: row-reverse;
@@ -657,7 +657,7 @@ h6 {
     font-size: 40px;
     line-height: 52px;
   }
-  
+
   .contact-info p {
     color: #fff;
     margin-top: 20px;
