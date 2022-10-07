@@ -17,6 +17,11 @@
       <nav class="app-nav">
         <a id="logo" href="#">My logo</a>
         <i id="menu-icon" class="bi bi-list"></i>
+        <ul class="d-menu">
+          <li class="menu"><a class="desktop-menu" href="#">Portfolio</a></li>
+          <li class="menu"><a class="desktop-menu" href="#">About</a></li>
+          <li class="menu"><a class="desktop-menu" href="#">Contact</a></li>
+        </ul>
       </nav>
       <main class="app-greeting">
         <h1>I'm Sane great to see you!</h1>
@@ -52,6 +57,9 @@
         <div class="project-images">
           <img src="./images/tonic1-img.svg" alt="Picture of project" />
         </div>
+        <div class="project-3">
+          <img src="./images/project1.svg" alt="">
+        </div>
         <div class="project-title">
           <h6>Tonic</h6>
           <ul class="list">
@@ -74,10 +82,14 @@
         </div>
       </div>
 
-      <div class="projects">
+      <div class="projects" id="project-1">
         <div class="project-images">
           <img src="./images/availability.svg" alt="Picture of project" />
         </div>
+        <div class="project-3">
+          <img src="./images/project-2.svg" alt="">
+        </div>
+
         <div class="project-title">
           <h6>
             Multi-Post<br />
@@ -96,6 +108,7 @@
           </p>
           <ul class="program-languages">
             <li><a id="language-name" href="#">html</a></li>
+            <li><a id="language-name" class="ruby-rails" href="#">Ruby on rails</a></li>
             <li><a id="language-name" href="#">css</a></li>
             <li><a id="language-name" href="#">javascript</a></li>
           </ul>
@@ -106,6 +119,9 @@
       <div class="projects">
         <div class="project-images">
           <img src="./images/tonic2.svg" alt="Picture of project" />
+        </div>
+        <div class="project-3">
+          <img src="./images/project-3.svg" alt="">
         </div>
         <div class="project-title">
           <h6>Tonic</h6>
@@ -122,6 +138,7 @@
           </p>
           <ul class="program-languages">
             <li><a id="language-name" href="#">html</a></li>
+            <li><a id="language-name" class="ruby-rails" href="#">Ruby on rails</a></li>
             <li><a id="language-name" href="#">css</a></li>
             <li><a id="language-name" href="#">javascript</a></li>
           </ul>
@@ -129,9 +146,12 @@
         </div>
       </div>
 
-      <div class="projects">
+      <div class="projects" id="project-2">
         <div class="project-images">
           <img src="./images/multipost.svg" alt="Picture of project" />
+        </div>
+        <div class="project-3">
+          <img src="./images/project-4.svg" alt="">
         </div>
         <div class="project-title">
           <h6>Multi-Post<br />Stories</h6>
@@ -148,6 +168,7 @@
           </p>
           <ul class="program-languages">
             <li><a id="language-name" href="#">html</a></li>
+            <li><a id="language-name" class="ruby-rails" href="#">Ruby on rails</a></li>
             <li><a id="language-name" href="#">css</a></li>
             <li><a id="language-name" href="#">javascript</a></li>
           </ul>
@@ -157,8 +178,10 @@
     </section>
 
     <section class="about-container">
-      <h2 class="about-heading">About<br />Myself</h2>
-      <main>
+
+      <div class="about">
+        <h2 class="about-heading">About<br />Myself</h2>
+
         <h6 id="intro">
           Hello I’m a software developer! I can help you build a product ,
           feature or website Look through some of my work and experience! If
@@ -184,66 +207,68 @@
           </li>
         </ul>
         <div><a class="see-projects resume" href="#">Get my resume</a></div>
+      </div>
 
-        <div class="experience">
-          <div class="language" id="framework">
-            <ul id="list-type">
-              <li>Languages</li>
-            </ul>
-            <a id="down-arrow"><img src="./images/down-pointer.svg" alt="#" /></a>
-          </div>
+      <div class="experience">
+        <div class="language" id="framework">
+          <ul class="list-type">
+            <li>Languages</li>
+          </ul>
+          <a id="down-arrow"><img src="./images/down-pointer.svg" alt="#" /></a>
+        </div>
+        <div class="language-container">
           <div class="list-languages">
-            <ul id="list-type">
+            <ul class="list-type">
               <li id="language-image">
                 <img src="./images/js.svg" alt="JavaScript badge" />
               </li>
-            </ul>
-            <ul id="list-type">
-              <li id="style">JavaScript</li>
+              <li id="js-style">JavaScript</li>
             </ul>
           </div>
           <div class="list-languages">
-            <ul id="list-type">
+            <ul class="list-type">
               <li id="language-image">
                 <img src="./images/html.svg" alt="HTML bagde" />
               </li>
-            </ul>
-            <ul id="list-type">
-              <li id="style">HTML</li>
+              <li id="html-style">HTML</li>
             </ul>
           </div>
           <div class="list-languages">
-            <ul id="list-type">
+            <ul class="list-type">
               <li id="language-image">
                 <img src="./images/css.svg" alt="CSS badge" />
               </li>
+              <li id="css-style">CSS</li>
+
             </ul>
-            <ul id="list-type">
-              <li id="style">CSS</li>
-            </ul>
-          </div>
-          <div class="language" id="border-line">
-            <ul id="list-type">
-              <li>Frameworks</li>
-            </ul>
-            <a id="down-arrow" href="#"><img src="./images/right-pointer.svg" alt="" /></a>
-          </div>
-          <div class="language" id="border-line">
-            <ul id="list-type">
-              <li>Skills</li>
-            </ul>
-            <a id="down-arrow" href="#"><img src="./images/right-pointer.svg" alt="" /></a>
+
           </div>
         </div>
-      </main>
+        <div class="language" id="border-line">
+          <ul class="list-type">
+            <li>Frameworks</li>
+          </ul>
+          <a id="down-arrow" href="#"><img src="./images/right-pointer.svg" alt="" /></a>
+        </div>
+        <div class="language" id="border-line">
+          <ul class="list-type">
+            <li>Skills</li>
+          </ul>
+          <a id="down-arrow" href="#"><img src="./images/right-pointer.svg" alt="" /></a>
+        </div>
+      </div>
+
+
     </section>
 
     <section class="contact-me">
       <div class="contact-info">
         <h3>Contact me</h3>
         <p>
-          If you have an application you <br> are interested in developing, a<br>
-          feature that you need built or a <br>project that needs coding. I’d <br>
+          If you have an application you <br class="ds-ignore"> are interested in <br class="mb-ignore"> developing,
+          a<br class="ds-ignore">
+          feature that you need built or a <br class="ds-ignore">project<br class="mb-ignore">that needs coding. I’d<br
+            class="ds-ignore">
           love to help with it
         </p>
         <form action="https://formspree.io/f/mdojzlqv" method="post">
