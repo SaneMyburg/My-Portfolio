@@ -685,4 +685,8 @@ h6 {
   input:hover::placeholder {
     transform: translate(10px);
   }
+
+  textarea:hover::placeholder {
+    transform: translate(20px, 20px );
+  }
 }
