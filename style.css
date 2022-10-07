@@ -435,7 +435,7 @@ h6 {
     padding-left: 260px;
     padding-right: 260px;
   }
-  
+
   .app-nav {
     display: flex;
     justify-content: space-evenly;
@@ -475,7 +475,6 @@ h6 {
     line-height: 60px;
     padding-top: 300px;
     padding-bottom: 20px;
-
   }
 
   .socials {
