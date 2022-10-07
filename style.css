@@ -32,6 +32,11 @@ body {
 #logo {
   display: flex;
   align-items: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: #6070ff;
 }
 
 nav {
@@ -59,14 +64,6 @@ p {
   font-size: 16px;
   line-height: 24px;
   color: #344563;
-}
-
-#logo {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 20px;
-  color: #6070ff;
 }
 
 a {
@@ -432,6 +429,10 @@ h6 {
   .app-greeting {
     background-image: url(./images/Frame.b.svg);
     background-repeat: no-repeat;
+    margin-top: 50px;
+    margin-bottom: 155px;
+    padding-left: 260px;
+    padding-right: 260px;
   }
     
   .app-nav {
@@ -465,13 +466,6 @@ h6 {
   .desktop-menu {
     display: flex;
     color: #344563; 
-  }
-  
-  .app-greeting {
-    margin-top: 50px;
-    margin-bottom: 155px;
-    padding-left: 260px;
-    padding-right: 260px;
   }
 
   .app-greeting h1 {
@@ -600,15 +594,15 @@ h6 {
     gap: 0.5%;
   }
 
+  .list-languages {
+    background-color: #f7f7f9;
+    width: 25%;
+  }
+
   .language-container .list-languages {
     display: grid;
     grid-template-columns: repeat(3/fr);
     width: 20%;
-  }
-
-  .list-languages {
-    background-color: #f7f7f9;
-    width: 25%;
   }
 
   .list-languages,
@@ -686,5 +680,4 @@ h6 {
   .form-input button {
     margin-left: -3%;
   }
-
 }
