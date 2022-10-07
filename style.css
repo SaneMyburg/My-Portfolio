@@ -389,6 +389,7 @@ h6 {
     overflow: hidden;
     gap: 12px;
   }
+  
   .projects-container {
     display: grid;
     justify-items: center;
@@ -417,13 +418,13 @@ h6 {
 
   .menu {
     display: none;
-  } 
+  }
 }
 
 @media screen and (min-width: 768px) {
   .app-container {
     display: grid;
-    width: 100%; 
+    width: 100%;
   }
 
   .app-greeting {
@@ -434,7 +435,7 @@ h6 {
     padding-left: 260px;
     padding-right: 260px;
   }
-    
+   
   .app-nav {
     display: flex;
     justify-content: space-evenly;
@@ -460,12 +461,12 @@ h6 {
     justify-content: flex-end;
     width: 60%;
     gap: 5%;
-    list-style: none;  
+    list-style: none;
   }
 
   .desktop-menu {
     display: flex;
-    color: #344563; 
+    color: #344563;
   }
 
   .app-greeting h1 {
@@ -473,7 +474,7 @@ h6 {
     font-size: 48px;
     line-height: 60px;
     padding-top: 300px;
-    padding-bottom: 20px;  
+    padding-bottom: 20px; 
   }
 
   .socials {
@@ -509,7 +510,8 @@ h6 {
     display: flex;
   }
 
-  #project-1, 
+  #project-1,
+
   #project-2 {
     display: flex;
     flex-direction: row-reverse;
@@ -524,7 +526,7 @@ h6 {
   #canopy {
     font-weight: 500;
     font-size: 18px;
-    line-height: 24px
+    line-height: 24px;
   }
 
   #backend {
@@ -599,15 +601,15 @@ h6 {
     width: 25%;
   }
 
+  .list-languages,
+  .language {
+    margin-left: 25px;
+  }
+
   .language-container .list-languages {
     display: grid;
     grid-template-columns: repeat(3/fr);
     width: 20%;
-  }
-
-  .list-languages,
-  .language {
-    margin-left: 25px;
   }
 
   .list-type {
@@ -626,7 +628,7 @@ h6 {
     margin-bottom: 15px;
   }
 
- .about-socials {
+  .about-socials {
     display: flex;
     gap: 5%;
     margin-top: 15px;
@@ -647,7 +649,7 @@ h6 {
     padding-top: 100px;
     text-align: center;
     color: #fff;
-    margin-left: 0%; 
+    margin-left: 0%;
   }
 
   .contact-info h3 {
