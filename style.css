@@ -99,7 +99,7 @@ i {
 .projects-container {
   display: grid;
   justify-items: center;
-  grid-template-rows: repeat(4/fr);
+  grid-template-rows: repeat(4 / fr);
   grid-auto-columns: 100%;
   grid-auto-rows: 600px;
   grid-row-gap: 88px;
@@ -335,7 +335,7 @@ h6 {
   padding: 10px;
   border-radius: 8px;
   border: none;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .text-input {
@@ -362,7 +362,7 @@ h6 {
   border: 1px solid #6070ff;
   font-size: 17px;
   font-weight: 500;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .submitBtn:enabled {
@@ -393,7 +393,7 @@ h6 {
   .projects-container {
     display: grid;
     justify-items: center;
-    grid-template-rows: repeat(4/fr);
+    grid-template-rows: repeat(4 / fr);
     grid-auto-columns: 100%;
     grid-auto-rows: 600px;
     grid-row-gap: 88px;
@@ -607,7 +607,7 @@ h6 {
 
   .language-container .list-languages {
     display: grid;
-    grid-template-columns: repeat(3/fr);
+    grid-template-columns: repeat(3 / fr);
     width: 20%;
   }
 
@@ -680,5 +680,9 @@ h6 {
 
   .form-input button {
     margin-left: -3%;
+  }
+
+  input:hover::placeholder {
+    transform: translate(10px);
   }
 }
