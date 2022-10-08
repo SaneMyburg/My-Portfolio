@@ -689,4 +689,22 @@ h6 {
   textarea:hover::placeholder {
     transform: translate(20px, 20px );
   }
-}
+
+  .project-3 {
+    transition: 2s;
+  }
+
+  .project-3:hover {
+    transform: scale(1.3);
+    z-index: 2;
+  }
+   
+  #logo {
+    animation: spin 2s;
+  }
+  
+  @keyframes spin {
+    0.5% { -webkit-transform: rotate(50deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+} 
