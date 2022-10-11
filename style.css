@@ -702,7 +702,6 @@ h6 {
   }
 
   @keyframes sane {
-    /*0.5% { -webkit-transform: rotate(50deg); }*/
     100% { transform: rotate(360deg); }
   }
 }
