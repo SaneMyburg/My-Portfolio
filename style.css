@@ -450,6 +450,7 @@ h6 {
     font-size: 18px;
     line-height: 20px;
     animation: spin 2s;
+    animation-name: sane;
   }
 
   #menu-icon {
@@ -700,8 +701,8 @@ h6 {
     z-index: 2;
   }
 
-  @keyframes spin {
-    0.5% { -webkit-transform: rotate(50deg); }
-    100% { -webkit-transform: rotate(360deg); }
+  @keyframes sane {
+    /*0.5% { -webkit-transform: rotate(50deg); }*/
+    100% { transform: rotate(360deg); }
   }
 }
