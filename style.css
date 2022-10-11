@@ -158,7 +158,7 @@ h6 {
 }
 
 #language-name {
-  background-color: #cacafb;
+  background-color: #ebebff;
   color: #4052f9;
   font-size: 12px;
   font-weight: 600;
@@ -182,7 +182,7 @@ h6 {
 }
 
 .see-projects:hover {
-  color: white;
+  color: #fff;
   background: #6070ff;
 }
 
