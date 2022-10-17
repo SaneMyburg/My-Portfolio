@@ -374,24 +374,24 @@ h6 {
   }
 
   .app-items {
-  background-color: #fff;
-  border-bottom-left-radius: 60px;
-  margin-bottom: 114px;
-}
+    background-color: #fff;
+    border-bottom-left-radius: 60px;
+    margin-bottom: 114px;
+  }
 
 .my-logo {
   padding-left: 30px;
   padding-top: 20px;
 }
 
-.hamburger {
-  width: 40px;
-  position: fixed;
-  top: 10px;
-  right: 0%;
-  cursor: pointer;
-  z-index: 100;
-}
+ .hamburger {
+    width: 40px;
+    position: fixed;
+    top: 10px;
+    right: 0%;
+    cursor: pointer;
+    z-index: 100;
+  } 
 
   .mobile-menu {
     width: 0%;
@@ -409,7 +409,7 @@ h6 {
     top: 40px;
     right: 30px;
     cursor: pointer;
-    z-index: 100;  
+    z-index: 100;
   }
 
   .mobile-menu.open-mobileMenu {
@@ -483,18 +483,19 @@ h6 {
     width: 100%;
     align-items: center;
   }
-  .app-items {
-  background-color: #fff;
-  border-bottom-left-radius: 60px;
-  margin-bottom: 114px;
-}
 
-.app-nav {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  padding: 16px;
-}
+  .app-items {
+    background-color: #fff;
+    border-bottom-left-radius: 60px;
+    margin-bottom: 114px;
+  }
+
+ .app-nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 16px;
+  }
 
   #logo {
     display: flex;
