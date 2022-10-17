@@ -379,19 +379,19 @@ h6 {
     margin-bottom: 114px;
   }
 
-.my-logo {
-  padding-left: 30px;
-  padding-top: 20px;
-}
+  .my-logo {
+    padding-left: 30px;
+    padding-top: 20px;
+  }
 
- .hamburger {
+  .hamburger {
     width: 40px;
     position: fixed;
     top: 10px;
     right: 0%;
     cursor: pointer;
     z-index: 100;
-  } 
+  }
 
   .mobile-menu {
     width: 0%;
@@ -459,7 +459,6 @@ h6 {
   .mb-ignore {
     display: none;
   }
-
 }
 
 @media screen and (min-width: 768px) {
@@ -482,19 +481,13 @@ h6 {
     justify-content: space-evenly;
     width: 100%;
     align-items: center;
+    padding: 16px;
   }
 
   .app-items {
     background-color: #fff;
     border-bottom-left-radius: 60px;
     margin-bottom: 114px;
-  }
-
- .app-nav {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    padding: 16px;
   }
 
   #logo {
