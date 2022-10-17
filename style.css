@@ -16,7 +16,7 @@ body {
   background: #e5e5e5;
 }
 
-.app-items {
+/*.app-items {
   background-color: #fff;
   border-bottom-left-radius: 60px;
   margin-bottom: 114px;
@@ -27,7 +27,7 @@ body {
   width: 100%;
   justify-content: space-between;
   padding: 16px;
-}
+}*/
 
 #logo {
   display: flex;
@@ -90,10 +90,6 @@ i {
 #menu-icon {
   color: #6070ff;
   margin-left: auto;
-}
-
-.desktop-menu {
-  display: none;
 }
 
 .projects-container {
@@ -389,6 +385,44 @@ h6 {
     overflow: hidden;
     gap: 12px;
   }
+  .app-items {
+  background-color: #fff;
+  border-bottom-left-radius: 60px;
+  margin-bottom: 114px;
+}
+
+.my-logo {
+  padding-left: 30px;
+  padding-top: 20px;
+}
+
+.hamburger {
+  width: 40px;
+  position: fixed;
+  top: 10px;
+  right: 0px;
+}
+
+  .mobile-menu {
+    width: 100%;
+    height: 100vh;
+    padding-left: 70px;
+    background:  #6070ff;
+    mix-blend-mode: multiply;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    padding-top: 50px;
+  }
+
+  .d-menu {
+    color: #fff;
+  }
+
+  .mobile-menu ul {
+    list-style: none;
+  }
 
   .projects-container {
     display: grid;
@@ -416,9 +450,6 @@ h6 {
     display: none;
   }
 
-  .menu {
-    display: none;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -442,6 +473,18 @@ h6 {
     width: 100%;
     align-items: center;
   }
+  .app-items {
+  background-color: #fff;
+  border-bottom-left-radius: 60px;
+  margin-bottom: 114px;
+}
+
+.app-nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 16px;
+}
 
   #logo {
     display: flex;
@@ -451,6 +494,7 @@ h6 {
     line-height: 20px;
     animation: spin 2s;
     animation-name: sane;
+    padding-left: 0%;
   }
 
   #menu-icon {
