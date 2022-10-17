@@ -16,19 +16,6 @@ body {
   background: #e5e5e5;
 }
 
-/*.app-items {
-  background-color: #fff;
-  border-bottom-left-radius: 60px;
-  margin-bottom: 114px;
-}
-
-.app-nav {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  padding: 16px;
-}*/
-
 #logo {
   display: flex;
   align-items: center;
@@ -385,6 +372,7 @@ h6 {
     overflow: hidden;
     gap: 12px;
   }
+
   .app-items {
   background-color: #fff;
   border-bottom-left-radius: 60px;
@@ -400,19 +388,18 @@ h6 {
   width: 40px;
   position: fixed;
   top: 10px;
-  right: 0px;
+  right: 0%;
   cursor: pointer;
   z-index: 100;
-
 }
 
   .mobile-menu {
     width: 0%;
-    height: 0vh;
+    height: 0%;
     padding-left: 40px;
     position: fixed;
-    top: 0;
-    right: 0;
+    top: 0%;
+    right: 0%;
     padding-top: 50px;
     overflow: hidden;
   }
@@ -422,8 +409,7 @@ h6 {
     top: 40px;
     right: 30px;
     cursor: pointer;
-    z-index: 100;
-    
+    z-index: 100;  
   }
 
   .mobile-menu.open-mobileMenu {
