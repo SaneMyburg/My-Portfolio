@@ -410,12 +410,20 @@ h6 {
     width: 0%;
     height: 0vh;
     padding-left: 40px;
-    mix-blend-mode: multiply;
     position: fixed;
     top: 0;
     right: 0;
     padding-top: 50px;
     overflow: hidden;
+  }
+
+  .mobile-menu img {
+    position: fixed;
+    top: 40px;
+    right: 30px;
+    cursor: pointer;
+    z-index: 100;
+    
   }
 
   .mobile-menu.open-mobileMenu {
@@ -430,6 +438,10 @@ h6 {
     color: #fff;
     font-weight: bold;
     font-size: 32px;
+  }
+
+  .d-menu {
+    padding-top: 20px;
   }
 
   .mobile-menu ul {
