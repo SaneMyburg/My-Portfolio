@@ -268,8 +268,8 @@ h6 {
   justify-content: center;
   width: 100%;
   background-image: url(./images/contact-back.svg);
+  background-size: 100% auto;
   background-repeat: no-repeat;
-  height: 779px;
   margin-top: 100px;
 }
 
@@ -311,7 +311,7 @@ h6 {
 
 .text-input,
 .message-input {
-  width: 327px;
+  width: 100%;
   box-sizing: border-box;
   margin-bottom: 1rem;
   margin-left: -35px;
@@ -405,7 +405,7 @@ h6 {
   }
 
   .mobile-menu img {
-    position: fixed;
+    /*position: fixed;*/
     top: 40px;
     right: 30px;
     cursor: pointer;
@@ -625,13 +625,13 @@ h6 {
   .about-container .about {
     display: flex;
     flex-direction: column;
-    width: 35%;
+    width: 100%;
   }
 
   .about-container .experience {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
   }
 
   .about h6 {
