@@ -16,19 +16,6 @@ body {
   background: #e5e5e5;
 }
 
-.app-items {
-  background-color: #fff;
-  border-bottom-left-radius: 60px;
-  margin-bottom: 114px;
-}
-
-.app-nav {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  padding: 16px;
-}
-
 #logo {
   display: flex;
   align-items: center;
@@ -90,10 +77,6 @@ i {
 #menu-icon {
   color: #6070ff;
   margin-left: auto;
-}
-
-.desktop-menu {
-  display: none;
 }
 
 .projects-container {
@@ -390,6 +373,67 @@ h6 {
     gap: 12px;
   }
 
+  .app-items {
+    background-color: #fff;
+    border-bottom-left-radius: 60px;
+    margin-bottom: 114px;
+  }
+
+  .my-logo {
+    padding-left: 30px;
+    padding-top: 20px;
+  }
+
+  .hamburger {
+    width: 40px;
+    position: fixed;
+    top: 10px;
+    right: 0%;
+    cursor: pointer;
+    z-index: 100;
+  }
+
+  .mobile-menu {
+    width: 0%;
+    height: 0%;
+    padding-left: 40px;
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    padding-top: 50px;
+    overflow: hidden;
+  }
+
+  .mobile-menu img {
+    position: fixed;
+    top: 40px;
+    right: 30px;
+    cursor: pointer;
+    z-index: 100;
+  }
+
+  .mobile-menu.open-mobileMenu {
+    width: 100%;
+    height: 100vh;
+    background: #6070ff;
+    mix-blend-mode: multiply;
+    backdrop-filter: blur(8px);
+  }
+
+  .desktop-menu {
+    color: #fff;
+    font-weight: bold;
+    font-size: 32px;
+  }
+
+  .d-menu {
+    padding-top: 20px;
+  }
+
+  .mobile-menu ul {
+    list-style: none;
+  }
+
   .projects-container {
     display: grid;
     justify-items: center;
@@ -415,10 +459,6 @@ h6 {
   .mb-ignore {
     display: none;
   }
-
-  .menu {
-    display: none;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -441,9 +481,16 @@ h6 {
     justify-content: space-evenly;
     width: 100%;
     align-items: center;
+    padding: 16px;
   }
 
-  #logo {
+  .app-items {
+    background-color: #fff;
+    border-bottom-left-radius: 60px;
+    margin-bottom: 114px;
+  }
+
+  .my-logo {
     display: flex;
     width: 20%;
     font-weight: 700;
@@ -451,6 +498,7 @@ h6 {
     line-height: 20px;
     animation: spin 2s;
     animation-name: sane;
+    margin-top: 20px;
   }
 
   #menu-icon {
@@ -459,11 +507,11 @@ h6 {
 
   .d-menu {
     display: flex;
-    flex-direction: row;
     justify-content: flex-end;
-    width: 60%;
-    gap: 5%;
+    width: 80%;
+    gap: 15px;
     list-style: none;
+    margin-right: 0;
   }
 
   .desktop-menu {
