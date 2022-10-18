@@ -490,7 +490,7 @@ h6 {
     margin-bottom: 114px;
   }
 
-  #logo {
+  .my-logo {
     display: flex;
     width: 20%;
     font-weight: 700;
@@ -498,7 +498,8 @@ h6 {
     line-height: 20px;
     animation: spin 2s;
     animation-name: sane;
-    padding-left: 0%;
+    margin-top: 20px;
+
   }
 
   #menu-icon {
@@ -507,11 +508,11 @@ h6 {
 
   .d-menu {
     display: flex;
-    flex-direction: row;
     justify-content: flex-end;
-    width: 60%;
-    gap: 5%;
+    width: 80%;
+    gap: 15px;
     list-style: none;
+    margin-right: 0;
   }
 
   .desktop-menu {
