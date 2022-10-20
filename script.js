@@ -21,7 +21,7 @@ const projects = [
     title: "Tonic",
     list: ["CANOPY", "Back End Dev", "2015"],
     description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     languages: ["HTML", "css", "Ruby and rails", "javascript"],
   },
   {
@@ -30,10 +30,10 @@ const projects = [
       src: "./images/project-2.svg",
       alt: "Picture of project",
     },
-    title: "Multi-Post Stories",
+    title: "Multi-Post <br> Stories",
     list: ["Canopy", "Back End Dev", "2015"],
     description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     languages: ["HTML", "Ruby on rails", "css", "javascript"],
   },
   {
@@ -45,7 +45,7 @@ const projects = [
     title: "Facebook 360",
     list: ["Canopy", "Back End Dev", "2015"],
     description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.",
     languages: ["HTML", "Ruby on rails", "css", "javascript"],
   },
   {
@@ -57,7 +57,7 @@ const projects = [
     title: "Uber Navigation",
     list: ["Canopy", "Back End Dev", "2015"],
     description:
-      "A daily selection of privately personalized reads; no accounts o sign-ups required.",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.",
     languages: ["HTML", "Ruby on rails", "css", "javascript"],
   },
 ];
@@ -77,7 +77,7 @@ function createModal() {
         <li>${input.list[2]}</li>
       </ul>
         <img class="modal-img" src="${input.img.src}" alt="${input.img.alt}" />
-        <div class="preview-info">
+        <div class="description-container">
           <p class="modal-description">
             ${input.description}
           </p>
@@ -90,7 +90,7 @@ function createModal() {
             </ul>
             <hr>
             <div class="modal-btns">
-              <button href="">
+              <button id="seeLive" href="">
               See Live
               <img src="./images/see-live.png" alt="Live img" />
               </button>
@@ -113,7 +113,7 @@ const modal = popupOverlay.querySelectorAll(".modal");
 
 seeProjects.forEach((card) => {
   card.onclick = () => {
-    popupOverlay.style.display = "block";
+    popupOverlay.style.display = "flex";
 
     const link = card.getAttribute("data-card");
     modal.forEach((s) => {

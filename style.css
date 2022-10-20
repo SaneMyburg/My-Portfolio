@@ -366,27 +366,73 @@ h6 {
 
 
 .modal-overlay {
-  position: absolute;
+  position: fixed;
   background-color: #c1c7d0; ;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100vh;
-  mix-blend-mode: multiply;
-  backdrop-filter: blur(8px);
   display: none;
 }
 
-.modal-overlay .modal {
-  margin: 2% 5% 2% 4%;
+.modal {
+  position: fixed;
+  width: 90%;
+  height: 90%;
   background: #fff;
+  overflow: scroll; 
   border-radius: 20px;
   position: relative;
-  max-height: 100%;
-  display: none; 
+  margin: 5px; 
+  padding-left: 15px;
+  display: none;
+  margin: 70px;
+  z-index: 99999;
 }
 
-.modal-overlay.active {
-  display: inline-block;
+.modal span {
+  position: absolute;
+  font-size: 1.9rem;
+  top: 10px;
+  right: 30px;
+  cursor: pointer;
 }
+
+.modal h6 {
+  margin-top: 10px;
+}
+
+.modal-overlay .modal.active {
+  display: flex;
+  flex-direction: column;
+}
+
+#language-names {
+  display: inline-flex;
+  list-style-type: none;
+  gap: 10px;
+  padding-left: 0%;
+}
+
+#language-names li {
+  background-color: #e9e9ffe9;
+  color: #4052f9;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 3px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.program-language hr {
+  border: 1px solid #ebecf0;
+  width: 90%;
+  margin: 10px;
+}
+ .modal-description {
+   font-size: 15px;
+   padding: 5px;
+ }
 
 @media screen and (max-width: 767px) {
   .app-greeting {
@@ -485,18 +531,36 @@ h6 {
     display: none;
   }
 
-  /* .close-modal {
-    position: absolute;
-    top: 25%;
-    right: 25%;
-    bottom: 25%;
-    left: 25%;
-    font-size: 5rem;
-    color: black;
-    cursor: pointer;
-    border: none;
-    background: none;
-  }  */
+  .modal-list {
+    display: flex;
+    list-style: none;
+    gap: 5%;
+  }
+
+  .modal-img {
+    padding-right: 5%;
+  }
+
+ .modal-btns {
+  display: flex;
+  width: 90%;
+  margin-left: 10px;
+  justify-content: space-between;
+  }
+
+ .modal-btns button {
+  color: #6070ff;
+  background-color: #fff;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 6px;
+  color: #6070ff;
+  font-size: 12px;
+  padding: 4px 12px 4px 12px;
+  border: 2px solid #6070ff; 
+  align-self: center;
+ }
 
 }
 
@@ -650,6 +714,12 @@ h6 {
     line-height: 24px;
   }
 
+  .program-language hr {
+    border: 1px solid #ebecf0;
+    width: 90%;
+    margin-left: 55px;
+  }
+
   .about-container {
     display: flex;
     width: 100%;
@@ -708,6 +778,57 @@ h6 {
   #language-image img {
     padding-left: 12px;
   }
+
+  .modal-list {
+    display: flex;
+    list-style: none;
+    gap: 2%;
+  }
+
+  .modal-img {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 2%;
+  }
+
+  .description-container {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .program-language {
+    width: 70%;
+  }
+
+  #language-names li {
+    padding: 5px;
+  }
+
+  .program-language hr {
+    width: 80%;
+    margin-left: 0%;
+    margin-bottom: 5%;
+  }
+
+  .modal-btns button {
+    color: #6070ff;
+    background-color: #fff;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 6px;
+    color: #6070ff;
+    font-size: 15px;
+    padding: 4px 12px 4px 12px;
+    border: 2px solid #6070ff; 
+    align-self: center;
+   }
+
+   #seeLive {
+    width: 35%;
+    padding-top: 5px;
+   }
 
   .ds-style {
     font-weight: 500;
