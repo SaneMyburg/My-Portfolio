@@ -66,7 +66,7 @@ const modalOverlay = document.querySelector(".modal-overlay");
 function createModal() {
   projects.forEach((input) => {
     modalOverlay.innerHTML += `
-    <div class="modal" data-target="${input.id}">
+    <div class="modal" aria-controls="${input.id}">
       <h6>${input.title}</h6> 
       <span class="close">&times;</span>
       <ul class="modal-list">
@@ -117,7 +117,7 @@ seeProjects.forEach((card) => {
 
     const link = card.getAttribute("data-card");
     modal.forEach((s) => {
-      const button = s.getAttribute("data-target");
+      const button = s.getAttribute("aria-controls");
       if (link === button) {
         s.classList.add("active");
       }
