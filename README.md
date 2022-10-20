@@ -19,11 +19,12 @@ You can clone the repo and then open the index.html file to view.
 
 - Any browser to view the html file.
 
-## Author
+## Authors
 
 - GitHub: [@SaneMyburg](https://github.com/@SaneMyburg)
 - Twitter: [@SaneMyburg](https://twitter.com/SaneMYburg)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/Sanelisiwe)
+- GitHub: [@30jossi](https://github.com/@30jossie)
 
 ## Contributions
 
