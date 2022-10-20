@@ -479,7 +479,7 @@ h6 {
     mix-blend-mode: multiply;
     backdrop-filter: blur(8px);
   }
-  
+
   .mobile-menu img {
     position: fixed;
     top: 40px;
