@@ -82,7 +82,6 @@ i {
 .projects-container {
   display: grid;
   justify-items: center;
-  grid-template-rows: repeat(4 / fr);
   grid-auto-columns: 100%;
   grid-auto-rows: 600px;
   grid-row-gap: 88px;
@@ -473,20 +472,20 @@ h6 {
     overflow: hidden;
   }
 
-  .mobile-menu img {
-    position: fixed;
-    top: 40px;
-    right: 30px;
-    cursor: pointer;
-    z-index: 100;
-  }
-
   .mobile-menu.open-mobileMenu {
     width: 100%;
     height: 100vh;
     background: #6070ff;
     mix-blend-mode: multiply;
     backdrop-filter: blur(8px);
+  }
+
+  .mobile-menu img {
+    position: fixed;
+    top: 40px;
+    right: 30px;
+    cursor: pointer;
+    z-index: 100;
   }
 
   .desktop-menu {
@@ -506,7 +505,6 @@ h6 {
   .projects-container {
     display: grid;
     justify-items: center;
-    grid-template-rows: repeat(4 / fr);
     grid-auto-columns: 100%;
     grid-auto-rows: 600px;
     grid-row-gap: 88px;
@@ -539,7 +537,7 @@ h6 {
     padding-right: 5%;
   }
 
- .modal-btns {
+  .modal-btns {
     display: flex;
     width: 90%;
     margin-left: 10px;
@@ -762,7 +760,6 @@ h6 {
 
   .language-container .list-languages {
     display: grid;
-    grid-template-columns: repeat(3 / fr);
     width: 20%;
   }
 
