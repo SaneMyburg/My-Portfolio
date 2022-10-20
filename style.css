@@ -364,10 +364,9 @@ h6 {
   color: gray;
 }
 
-
 .modal-overlay {
   position: fixed;
-  background-color: #c1c7d0; ;
+  background-color: #c1c7d0;
   top: 0;
   left: 0;
   width: 100%;
@@ -376,18 +375,17 @@ h6 {
 }
 
 .modal {
-  position: fixed;
   width: 90%;
   height: 90%;
   background: #fff;
-  overflow: scroll; 
+  overflow: scroll;
   border-radius: 20px;
   position: relative;
-  margin: 5px; 
   padding-left: 15px;
   display: none;
-  margin: 70px;
+  margin: 75px;
   z-index: 99999;
+
 }
 
 .modal span {
@@ -429,10 +427,11 @@ h6 {
   width: 90%;
   margin: 10px;
 }
- .modal-description {
-   font-size: 15px;
-   padding: 5px;
- }
+
+.modal-description {
+  font-size: 15px;
+  padding: 5px;
+}
 
 @media screen and (max-width: 767px) {
   .app-greeting {
@@ -542,26 +541,24 @@ h6 {
   }
 
  .modal-btns {
-  display: flex;
-  width: 90%;
-  margin-left: 10px;
-  justify-content: space-between;
+    display: flex;
+    width: 90%;
+    margin-left: 10px;
+    justify-content: space-between;
   }
 
  .modal-btns button {
-  color: #6070ff;
-  background-color: #fff;
-  padding: 5px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 6px;
-  color: #6070ff;
-  font-size: 12px;
-  padding: 4px 12px 4px 12px;
-  border: 2px solid #6070ff; 
-  align-self: center;
- }
+    color: #6070ff;
+    background-color: #fff;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 12px;
+    border: 2px solid #6070ff;
+    align-self: center;
 
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -716,8 +713,9 @@ h6 {
 
   .program-language hr {
     border: 1px solid #ebecf0;
-    width: 90%;
-    margin-left: 55px;
+    width: 80%;
+    margin-left: 0%;
+    margin-bottom: 5%;
   }
 
   .about-container {
@@ -805,43 +803,35 @@ h6 {
     padding: 5px;
   }
 
-  .program-language hr {
-    width: 80%;
-    margin-left: 0%;
-    margin-bottom: 5%;
-  }
-
   .modal-btns button {
     color: #6070ff;
     background-color: #fff;
-    padding: 5px;
     text-align: center;
     text-decoration: none;
     border-radius: 6px;
-    color: #6070ff;
     font-size: 15px;
     padding: 4px 12px 4px 12px;
     border: 2px solid #6070ff; 
     align-self: center;
-   }
+  }
 
    #seeLive {
-    width: 35%;
-    padding-top: 5px;
+     width: 35%;
+     padding-top: 5px;
    }
 
   .ds-style {
-    font-weight: 500;
-    font-size: 15px;
-    padding-left: 20px;
-    margin-bottom: 15px;
+     font-weight: 500;
+     font-size: 15px;
+     padding-left: 20px;
+     margin-bottom: 15px;
   }
 
   .about-socials {
-    display: flex;
-    gap: 5%;
-    margin-top: 15px;
-    margin-bottom: 15px;
+     display: flex;
+     gap: 5%;
+     margin-top: 15px;
+     margin-bottom: 15px;
   }
 
   .contact-me {
