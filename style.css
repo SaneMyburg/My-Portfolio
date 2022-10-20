@@ -472,13 +472,6 @@ h6 {
     overflow: hidden;
   }
 
-  .mobile-menu img {
-    top: 40px;
-    right: 30px;
-    cursor: pointer;
-    z-index: 100;
-  }
-  
   .mobile-menu.open-mobileMenu {
     width: 100%;
     height: 100vh;
