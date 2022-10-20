@@ -363,29 +363,6 @@ h6 {
   color: gray;
 }
 
-.modal-overlay {
-  position: fixed;
-  background-color: #c1c7d0;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  display: none;
-}
-
-.modal {
-  width: 90%;
-  height: 90%;
-  background: #fff;
-  overflow: scroll;
-  border-radius: 20px;
-  position: relative;
-  padding-left: 15px;
-  display: none;
-  margin: 75px;
-  z-index: 99999;
-}
-
 .modal span {
   position: absolute;
   font-size: 1.9rem;
@@ -395,12 +372,8 @@ h6 {
 }
 
 .modal h6 {
-  margin-top: 10px;
-}
-
-.modal-overlay .modal.active {
-  display: flex;
-  flex-direction: column;
+  margin:  14px 5px 0 20px;
+  color: #172b4d;
 }
 
 #language-names {
@@ -527,33 +500,91 @@ h6 {
     display: none;
   }
 
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    background: rgba(193, 199, 208, 0.8);
+    backdrop-filter: blur(8px);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: none;
+  }
+
+  .modal-overlay .modal {
+    margin: 2% 5% 2% 4%;
+    background: #fff;
+    border-radius: 20px;
+    position: relative;
+    display: none;
+    height: 100vh;
+    overflow: scroll;
+  }
+
+  .modal-overlay .modal.active {
+    display: inline-block;
+  }
+
   .modal-list {
     display: flex;
     list-style: none;
     gap: 5%;
+    margin-left: 4.5%;
   }
 
   .modal-img {
-    padding-right: 5%;
+    max-width: 90%;
+    width: 100%;
+    margin-left: 4%;
+    height: 80%;
   }
+
+  .modal-description {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .program-language .language-names {
+    display: flex;
+    padding: 10px;
+  }
+
+  .program-language {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+  }
+
 
   .modal-btns {
     display: flex;
-    width: 90%;
-    margin-left: 10px;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 8px
   }
 
   .modal-btns button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 10px;
+    border-radius: 8px;
+    border: 2px solid #6790f7;
+    background: #fff;
     color: #6070ff;
-    background-color: #fff;
-    padding: 5px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 6px;
-    font-size: 12px;
-    border: 2px solid #6070ff;
-    align-self: center;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .modal-btns #seeLive {
+    padding: 16px;
+  }
+
+  .modal-btns button img {
+    margin-left: 10px;
   }
 }
 
@@ -772,47 +803,74 @@ h6 {
     padding-left: 12px;
   }
 
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    background: rgba(193, 199, 208, 0.8);
+    backdrop-filter: blur(8px);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: none;
+  }
+
+   .modal {
+    margin: 2%;
+    background: #fff;
+    border-radius: 20px;
+    position: relative;
+    display: none;
+    max-height: 100vh;
+    overflow: scroll;
+  }
+
+  .modal-overlay .modal.modal.active {
+    display: inline-block;
+  }
+
+  .modal h6 {
+    margin-left: 5%;
+  }
+
   .modal-list {
     display: flex;
     list-style: none;
     gap: 2%;
+    margin-left: 5%;
   }
 
   .modal-img {
-    width: 90%;
-    margin-left: 5%;
-    margin-top: 2%;
+    width: 95%;
+    margin-left: 2.5%;
+    margin-top: 0%;
   }
 
   .description-container {
-    display: flex;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-
-  .program-language {
-    width: 70%;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    margin-left: 20px;
   }
 
   #language-names li {
     padding: 5px;
   }
 
-  .modal-btns button {
-    color: #6070ff;
-    background-color: #fff;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 6px;
-    font-size: 15px;
-    padding: 4px 12px 4px 12px;
-    border: 2px solid #6070ff;
-    align-self: center;
+  .modal-btns {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    margin-left: 0%;
+    grid-column-gap: 2%;
   }
 
-  #seeLive {
-    width: 35%;
+  .modal-btns button {
+    border: 2px solid #6070ff;
+    border-radius: 6px;
+    color: #6070ff;
+    font-size: 15px;
     padding-top: 5px;
+    padding-bottom: 5px;
   }
 
   .ds-style {
