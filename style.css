@@ -372,7 +372,7 @@ h6 {
 }
 
 .modal h6 {
-  margin:  14px 5px 0 20px;
+  margin: 14px 5px 0 20px;
   color: #172b4d;
 }
 
@@ -557,13 +557,12 @@ h6 {
     margin-left: 5px;
   }
 
-
   .modal-btns {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 15px;
-    padding: 8px
+    padding: 8px;
   }
 
   .modal-btns button {
@@ -816,7 +815,7 @@ h6 {
     display: none;
   }
 
-   .modal {
+  .modal {
     margin: 2%;
     background: #fff;
     border-radius: 20px;
