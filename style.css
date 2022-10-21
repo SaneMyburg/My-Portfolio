@@ -363,6 +363,17 @@ h6 {
   color: gray;
 }
 
+#error-msg {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  color: rgb(100, 90, 90);
+  border: 1px solid #ff2b2b;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
 .modal span {
   position: absolute;
   font-size: 1.9rem;

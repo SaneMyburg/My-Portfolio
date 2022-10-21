@@ -283,15 +283,14 @@
           I’d<br class="ds-ignore">
           love to help with it
         </p>
-        <form action="https://formspree.io/f/mdojzlqv" method="post">
+        <form id="form" action="https://formspree.io/f/mdojzlqv" method="post">
           <ul class="form-input">
             <li>
               <input type="text" id="name" name="user-name" placeholder="Name" maxlength="30" class="text-input"
                 required />
             </li>
             <li>
-              <input type="text" id="mail" name="user-email" placeholder="email@address.com" class="text-input"
-                required />
+              <input type="text" id="mail" name="user-email" placeholder="email@address.com" class="text-input" />
             </li>
             <li>
               <textarea name="user-message" id="msg" placeholder="Write your message here" maxlength="500"
@@ -301,13 +300,11 @@
               <button type="submit" class="submitBtn">Get in Touch</button>
             </li>
           </ul>
+          <div id="error-msg"></div>
         </form>
       </div>
     </section>
   </div>
-
-
-
   <script src="script.js"></script>
 </body>
 
