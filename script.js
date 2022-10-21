@@ -136,13 +136,11 @@ const errorMsg = document.getElementById('error-msg');
 
 form.addEventListener('submit', (e) => {
   const message = 'Email must be small letters';
-  if (email.value.toLowerCase() === email.value){
+  if (email.value.toLowerCase() === email.value) {
     form.submit();
-
   } else {
     e.preventDefault();
     errorMsg.innerText = message;
     errorMsg.style.opacity = 1;
-  }  
+  }
 });
-
