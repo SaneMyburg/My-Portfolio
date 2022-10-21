@@ -144,3 +144,41 @@ form.addEventListener('submit', (e) => {
     errorMsg.style.opacity = 1;
   }
 });
+
+function storageAvailable(type) {
+  let storage;
+  try {
+    storage = window[type];
+    const x = '__storage_test__';
+    storage.setItem(x, x);
+    storage.removeItem(x);
+    return true;
+  } catch (e) {
+    return e instanceof DOMException && (
+        e.code === 22 ||
+        e.code === 1014 ||
+        e.name === 'QuotaExceededError' ||
+        e.name === 'NS_ERROR_DOM_QUOTA_REACHED') &&
+        (storage && storage.length !== 0);
+  }
+}
+
+const name = document.getElementById('name');
+const msg = document.getElementById('msg');
+
+if (storageAvailable('localStorage')) {
+  form.addEventListener('input', () =>{
+    const formInfo = {
+      userName: form.name.value,
+      userEmail: form.email.value,
+      userMsg: form.msg.value,
+    };
+
+    localStorage.setItem('storeInfo', JSON.stringify(formInfo));
+  })
+};
+
+const getInfo = JSON.parse(localStorage.getItem('formInfo'));
+form.name.value = getInfo.userName;
+form.email.value = getInfo.userEmail;
+form.msg.value = getInfo.userMsg;
