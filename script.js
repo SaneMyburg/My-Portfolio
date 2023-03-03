@@ -13,14 +13,14 @@ const projects = [
   {
     id: 'project1',
     img: {
-      src: './images/project1.svg',
+      src: './images/awesome-book.png',
       alt: 'Picture of project',
     },
-    title: 'Tonic',
+    title: 'Awesome Books',
     list: ['CANOPY', 'Back End Dev', '2015'],
     description:
-      "Lorem Ipsum is simply dummy text of the printings and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    languages: ['HTML', 'css', 'Ruby and rails', 'javascript'],
+      "Awesome Books is a single page app that allows you to store all your favourite books, add new book and removes the books from UI",
+    languages: ['HTML', 'CSS', 'JavaScript'],
   },
   {
     id: 'project2',
@@ -68,11 +68,6 @@ function createModal() {
       <h6>${input.title}</h6> 
       <span class="close">&times;</span>
       <ul class="modal-list">
-        <li id="canopy-modal">${input.list[0]}</li>
-        <li><img src="./images/Counter.svg" alt="Bullet point image" /></li>
-        <li>${input.list[1]}</li>
-        <li><img src="./images/Counter.svg" alt="Bullet point image" /></li>
-        <li>${input.list[2]}</li>
       </ul>
         <img class="modal-img" src="${input.img.src}" alt="${input.img.alt}" />
         <div class="description-container">
@@ -84,7 +79,6 @@ function createModal() {
               <li>${input.languages[0]}</li>
               <li>${input.languages[1]}</li>
               <li>${input.languages[2]}</li>
-              <li>${input.languages[3]}</li>
             </ul>
             <hr>
             <div class="modal-btns">
