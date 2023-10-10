@@ -155,11 +155,11 @@ function storageAvailable(type) {
     return true;
   } catch (e) {
     return e instanceof DOMException && (
-        e.code === 22 ||
-        e.code === 1014 ||
-        e.name === 'QuotaExceededError' ||
-        e.name === 'NS_ERROR_DOM_QUOTA_REACHED') &&
-        (storage && storage.length !== 0);
+      e.code === 22
+        || e.code === 1014
+        || e.name === 'QuotaExceededError'
+        || e.name === 'NS_ERROR_DOM_QUOTA_REACHED')
+        && (storage && storage.length !== 0);
   }
 }
 
@@ -167,7 +167,7 @@ const name = document.getElementById('name');
 const msg = document.getElementById('msg');
 
 if (storageAvailable('localStorage')) {
-  form.addEventListener('input', () =>{
+  form.addEventListener('input', () => {
     const formInfo = {
       userName: form.name.value,
       userEmail: form.email.value,
@@ -175,8 +175,8 @@ if (storageAvailable('localStorage')) {
     };
 
     localStorage.setItem('storeInfo', JSON.stringify(formInfo));
-  })
-};
+  });
+}
 
 const getInfo = JSON.parse(localStorage.getItem('formInfo'));
 form.name.value = getInfo.userName;
