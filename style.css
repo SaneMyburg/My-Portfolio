@@ -957,12 +957,17 @@ h6 {
     transition: 2s;
   }
 
+  /* .project-3 img {
+    width: 50%;
+    height: auto;
+  } */
+
   .project-3:hover {
     transform: scale(1.3);
     z-index: 2;
   }
 
-  @keyframes sane {
+  /* @keyframes sane {
     100% { transform: rotate(360deg); }
-  }
+  } */
 }
