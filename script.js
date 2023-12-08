@@ -16,11 +16,13 @@ const projects = [
       src: './images/besu-food1.png',
       alt: 'Picture of project',
     },
-    title: 'Awesome Books',
+    title: 'BESA Italian Food',
     list: ['CANOPY', 'Back End Dev', '2015'],
     description:
-      "Awesome Books is a single page app that allows you to store all your favourite books, add new book and removes the books from UI",
+      "Embark on a visual journey through a captivating display of Italian culinary delights and recipes &period;",
     languages: ['HTML', 'CSS', 'JavaScript'],
+    liveUrl: 'https://sanemyburg.github.io/Module2-Capstone/dist/',
+    sourceUrl: 'https://github.com/SaneMyburg/Module2-Capstone',
   },
   {
     id: 'project2',
@@ -82,11 +84,11 @@ function createModal() {
             </ul>
             <hr>
             <div class="modal-btns">
-              <button id="seeLive" href="">
+              <button id="seeLive" class="seeLiveBtn" data-url="${input.liveUrl}">
               See Live
               <img src="./images/see-live.png" alt="Live img" />
               </button>
-              <button href="">
+              <button class="seeSourceBtn" data-url="${input.sourceUrl}">
               See Source
               <img src="./images/see-source.png" alt="Github logo" />
               </button>
@@ -96,6 +98,24 @@ function createModal() {
       
     </div> `;
   });
+  addEventListeners();
+}
+const addEventListeners = () => {
+  const seeLiveBtns = document.querySelectorAll('.seeLiveBtn');
+  const seeSourceBtns = document.querySelectorAll('.seeSourceBtn');
+
+  const redirectToLive = (event) => {
+    const liveUrl = event.currentTarget.getAttribute('data-url');
+    window.open(liveUrl, '_blank');
+  }
+
+  const redirectToSource = (event) => {
+    const sourceUrl = event.currentTarget.getAttribute('data-url');
+    window.open(sourceUrl, '_blank');
+  }
+
+  seeLiveBtns.forEach((btn) => btn.addEventListener('click', redirectToLive));
+  seeSourceBtns.forEach((btn) => btn.addEventListener('click', redirectToSource));
 }
 createModal();
 
