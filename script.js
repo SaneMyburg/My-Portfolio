@@ -104,7 +104,7 @@ function createModal() {
       
     </div> `;
   });
-  addEventListeners();
+  addEventListeners(); // eslint-disable-line no-use-before-define
 }
 const addEventListeners = () => {
   const seeLiveBtns = document.querySelectorAll('.seeLiveBtn');
@@ -165,7 +165,7 @@ form.addEventListener('submit', (e) => {
   }
 });
 
-const toggleLanguages = () => {
+const toggleLanguages = () => { // eslint-disable-line no-used-vars
   const languageContainer = document.getElementById('language-container');
   const toggleArrow = document.getElementById('toggle-arrow');
 
@@ -177,7 +177,8 @@ const toggleLanguages = () => {
     toggleArrow.innerHTML = '<img src=".images/down-pointer.svg" alt="Down arrow" />';
   }
 };
-const toggleFrameworks = () => {
+
+const toggleFrameworks = () => { // eslint-disable-line no-used-vars
   const languageContainer = document.getElementById('framework-container');
   const toggleArrow = document.getElementById('toggle-arrow');
 
@@ -189,7 +190,8 @@ const toggleFrameworks = () => {
     toggleArrow.innerHTML = '<img src=".images/down-pointer.svg" alt="Down arrow" />';
   }
 };
-const toggleSkills = () => {
+
+const toggleSkills = () => { // eslint-disable-line no-used-vars
   const languageContainer = document.getElementById('skills-container');
   const toggleArrow = document.getElementById('toggle-arrow');
 

@@ -809,6 +809,10 @@ h6 {
     flex-direction: column;
   }
 
+  .project-3 img {
+    width: 80%;
+  }
+
   #language-image img {
     padding-left: 12px;
   }
@@ -855,7 +859,7 @@ h6 {
     width: 95%;
     margin-left: 2.5%;
     margin-top: 0%;
-    max-height: auto;
+    /* max-height: auto; */
   }
 
   .description-container {
@@ -956,10 +960,6 @@ h6 {
 
   .project-3 {
     transition: 2s;
-  }
-
-  .project-3 img {
-    width: 80%;
   }
 
   .project-3:hover {
