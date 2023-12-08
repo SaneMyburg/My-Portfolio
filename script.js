@@ -13,50 +13,58 @@ const projects = [
   {
     id: 'project1',
     img: {
-      src: './images/awesome-book.png',
+      src: './images/besu-food1.png',
       alt: 'Picture of project',
     },
-    title: 'Awesome Books',
+    title: 'BESA Italian Food',
     list: ['CANOPY', 'Back End Dev', '2015'],
     description:
-      "Awesome Books is a single page app that allows you to store all your favourite books, add new book and removes the books from UI",
+      'Embark on a visual journey through a captivating display of Italian culinary delights and recipes &period;',
     languages: ['HTML', 'CSS', 'JavaScript'],
+    liveUrl: 'https://sanemyburg.github.io/Module2-Capstone/dist/',
+    sourceUrl: 'https://github.com/SaneMyburg/Module2-Capstone',
   },
   {
     id: 'project2',
     img: {
-      src: './images/project-2.svg',
+      src: './images/Forexdesktop.png',
       alt: 'Picture of project',
     },
-    title: 'Multi-Post <br> Stories',
+    title: 'ForeignExchange <br> Application',
     list: ['Canopy', 'Back End Dev', '2015'],
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+      'Showcases forex pairs through integration with an API.',
     languages: ['HTML', 'Ruby on rails', 'css', 'javascript'],
+    liveUrl: 'https://sanemforex-app.netlify.app/',
+    sourceUrl: 'https://github.com/SaneMyburg/forex-app/tree/features',
   },
   {
     id: 'project3',
     img: {
-      src: './images/project-3.svg',
+      src: './images/spacedesktop.png',
       alt: 'Picture of project',
     },
-    title: 'Facebook 360',
+    title: 'Space Travelors Club',
     list: ['Canopy', 'Back End Dev', '2015'],
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.",
-    languages: ['HTML', 'Ruby on rails', 'css', 'javascript'],
+      'A reservation website for rockets and spaceship travelers.',
+    languages: ['HTML', 'React', 'css', 'javascript'],
+    liveUrl: 'https://our-space-misssions.onrender.com/',
+    sourceUrl: 'https://github.com/zdnahom/space-travelers-hub',
   },
   {
     id: 'project4',
     img: {
-      src: './images/project-4.svg',
+      src: './images/budgetdesktop.png',
       alt: 'Picture of project',
     },
-    title: 'Uber Navigation',
+    title: 'Budget App',
     list: ['Canopy', 'Back End Dev', '2015'],
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.",
+      'Elevated financial organization with a user-friendly budget application designed to effortlessly manage and streamline your expenses.',
     languages: ['HTML', 'Ruby on rails', 'css', 'javascript'],
+    liveUrl: 'https://smartbudget-41er.onrender.com/',
+    sourceUrl: 'https://github.com/SaneMyburg/Budget-App-V2/tree/budget-app',
   },
 ];
 
@@ -82,11 +90,11 @@ function createModal() {
             </ul>
             <hr>
             <div class="modal-btns">
-              <button id="seeLive" href="">
+              <button id="seeLive" class="seeLiveBtn" data-url="${input.liveUrl}">
               See Live
               <img src="./images/see-live.png" alt="Live img" />
               </button>
-              <button href="">
+              <button class="seeSourceBtn" data-url="${input.sourceUrl}">
               See Source
               <img src="./images/see-source.png" alt="Github logo" />
               </button>
@@ -96,7 +104,25 @@ function createModal() {
       
     </div> `;
   });
+  addEventListeners(); // eslint-disable-line no-use-before-define
 }
+const addEventListeners = () => {
+  const seeLiveBtns = document.querySelectorAll('.seeLiveBtn');
+  const seeSourceBtns = document.querySelectorAll('.seeSourceBtn');
+
+  const redirectToLive = (event) => {
+    const liveUrl = event.currentTarget.getAttribute('data-url');
+    window.open(liveUrl, '_blank');
+  };
+
+  const redirectToSource = (event) => {
+    const sourceUrl = event.currentTarget.getAttribute('data-url');
+    window.open(sourceUrl, '_blank');
+  };
+
+  seeLiveBtns.forEach((btn) => btn.addEventListener('click', redirectToLive));
+  seeSourceBtns.forEach((btn) => btn.addEventListener('click', redirectToSource));
+};
 createModal();
 
 const popupOverlay = document.querySelector('.modal-overlay');
@@ -138,3 +164,42 @@ form.addEventListener('submit', (e) => {
     errorMsg.style.opacity = 1;
   }
 });
+
+const toggleLanguages = () => { // eslint-disable-line no-unused-vars
+  const languageContainer = document.getElementById('language-container');
+  const toggleArrow = document.getElementById('toggle-arrow');
+
+  if (languageContainer.style.display === 'none' || languageContainer.style.display === '') {
+    languageContainer.style.display = 'flex';
+    toggleArrow.innerHTML = '<img src=".images/right-pointer.svg" alt="Right arrow" />';
+  } else {
+    languageContainer.style.display = 'none';
+    toggleArrow.innerHTML = '<img src=".images/down-pointer.svg" alt="Down arrow" />';
+  }
+};
+
+const toggleFrameworks = () => { // eslint-disable-line no-unused-vars
+  const languageContainer = document.getElementById('framework-container');
+  const toggleArrow = document.getElementById('toggle-arrow');
+
+  if (languageContainer.style.display === 'none' || languageContainer.style.display === '') {
+    languageContainer.style.display = 'flex';
+    toggleArrow.innerHTML = '<img src=".images/right-pointer.svg" alt="Right arrow" />';
+  } else {
+    languageContainer.style.display = 'none';
+    toggleArrow.innerHTML = '<img src=".images/down-pointer.svg" alt="Down arrow" />';
+  }
+};
+
+const toggleSkills = () => { // eslint-disable-line no-unused-vars
+  const languageContainer = document.getElementById('skills-container');
+  const toggleArrow = document.getElementById('toggle-arrow');
+
+  if (languageContainer.style.display === 'none' || languageContainer.style.display === '') {
+    languageContainer.style.display = 'flex';
+    toggleArrow.innerHTML = '<img src=".images/right-pointer.svg" alt="Right arrow" />';
+  } else {
+    languageContainer.style.display = 'none';
+    toggleArrow.innerHTML = '<img src=".images/down-pointer.svg" alt="Down arrow" />';
+  }
+};
