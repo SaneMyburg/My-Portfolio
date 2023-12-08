@@ -165,7 +165,7 @@ form.addEventListener('submit', (e) => {
   }
 });
 
-const toggleLanguages = () => { // eslint-disable-line no-used-vars
+const toggleLanguages = () => { // eslint-disable-line no-unused-vars
   const languageContainer = document.getElementById('language-container');
   const toggleArrow = document.getElementById('toggle-arrow');
 
@@ -178,7 +178,7 @@ const toggleLanguages = () => { // eslint-disable-line no-used-vars
   }
 };
 
-const toggleFrameworks = () => { // eslint-disable-line no-used-vars
+const toggleFrameworks = () => { // eslint-disable-line no-unused-vars
   const languageContainer = document.getElementById('framework-container');
   const toggleArrow = document.getElementById('toggle-arrow');
 
@@ -191,7 +191,7 @@ const toggleFrameworks = () => { // eslint-disable-line no-used-vars
   }
 };
 
-const toggleSkills = () => { // eslint-disable-line no-used-vars
+const toggleSkills = () => { // eslint-disable-line no-unused-vars
   const languageContainer = document.getElementById('skills-container');
   const toggleArrow = document.getElementById('toggle-arrow');
 
