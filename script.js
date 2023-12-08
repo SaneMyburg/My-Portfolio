@@ -19,7 +19,7 @@ const projects = [
     title: 'BESA Italian Food',
     list: ['CANOPY', 'Back End Dev', '2015'],
     description:
-      "Embark on a visual journey through a captivating display of Italian culinary delights and recipes &period;",
+      'Embark on a visual journey through a captivating display of Italian culinary delights and recipes &period;',
     languages: ['HTML', 'CSS', 'JavaScript'],
     liveUrl: 'https://sanemyburg.github.io/Module2-Capstone/dist/',
     sourceUrl: 'https://github.com/SaneMyburg/Module2-Capstone',
@@ -33,7 +33,7 @@ const projects = [
     title: 'ForeignExchange <br> Application',
     list: ['Canopy', 'Back End Dev', '2015'],
     description:
-      "Showcases forex pairs through integration with an API.",
+      'Showcases forex pairs through integration with an API.',
     languages: ['HTML', 'Ruby on rails', 'css', 'javascript'],
     liveUrl: 'https://sanemforex-app.netlify.app/',
     sourceUrl: 'https://github.com/SaneMyburg/forex-app/tree/features',
@@ -47,10 +47,10 @@ const projects = [
     title: 'Space Travelors Club',
     list: ['Canopy', 'Back End Dev', '2015'],
     description:
-      "A reservation website for rockets and spaceship travelers.",
+      'A reservation website for rockets and spaceship travelers.',
     languages: ['HTML', 'React', 'css', 'javascript'],
     liveUrl: 'https://our-space-misssions.onrender.com/',
-    sourceUrl: 'https://github.com/zdnahom/space-travelers-hub'
+    sourceUrl: 'https://github.com/zdnahom/space-travelers-hub',
   },
   {
     id: 'project4',
@@ -61,7 +61,7 @@ const projects = [
     title: 'Budget App',
     list: ['Canopy', 'Back End Dev', '2015'],
     description:
-      "Elevated financial organization with a user-friendly budget application designed to effortlessly manage and streamline your expenses.",
+      'Elevated financial organization with a user-friendly budget application designed to effortlessly manage and streamline your expenses.',
     languages: ['HTML', 'Ruby on rails', 'css', 'javascript'],
     liveUrl: 'https://smartbudget-41er.onrender.com/',
     sourceUrl: 'https://github.com/SaneMyburg/Budget-App-V2/tree/budget-app',
@@ -113,16 +113,16 @@ const addEventListeners = () => {
   const redirectToLive = (event) => {
     const liveUrl = event.currentTarget.getAttribute('data-url');
     window.open(liveUrl, '_blank');
-  }
+  };
 
   const redirectToSource = (event) => {
     const sourceUrl = event.currentTarget.getAttribute('data-url');
     window.open(sourceUrl, '_blank');
-  }
+  };
 
   seeLiveBtns.forEach((btn) => btn.addEventListener('click', redirectToLive));
   seeSourceBtns.forEach((btn) => btn.addEventListener('click', redirectToSource));
-}
+};
 createModal();
 
 const popupOverlay = document.querySelector('.modal-overlay');
@@ -164,3 +164,40 @@ form.addEventListener('submit', (e) => {
     errorMsg.style.opacity = 1;
   }
 });
+
+const toggleLanguages = () => {
+  const languageContainer = document.getElementById('language-container');
+  const toggleArrow = document.getElementById('toggle-arrow');
+
+  if (languageContainer.style.display === 'none' || languageContainer.style.display === '') {
+    languageContainer.style.display = 'flex';
+    toggleArrow.innerHTML = '<img src=".images/right-pointer.svg" alt="Right arrow" />';
+  } else {
+    languageContainer.style.display = 'none';
+    toggleArrow.innerHTML = '<img src=".images/down-pointer.svg" alt="Down arrow" />';
+  }
+};
+const toggleFrameworks = () => {
+  const languageContainer = document.getElementById('framework-container');
+  const toggleArrow = document.getElementById('toggle-arrow');
+
+  if (languageContainer.style.display === 'none' || languageContainer.style.display === '') {
+    languageContainer.style.display = 'flex';
+    toggleArrow.innerHTML = '<img src=".images/right-pointer.svg" alt="Right arrow" />';
+  } else {
+    languageContainer.style.display = 'none';
+    toggleArrow.innerHTML = '<img src=".images/down-pointer.svg" alt="Down arrow" />';
+  }
+};
+const toggleSkills = () => {
+  const languageContainer = document.getElementById('skills-container');
+  const toggleArrow = document.getElementById('toggle-arrow');
+
+  if (languageContainer.style.display === 'none' || languageContainer.style.display === '') {
+    languageContainer.style.display = 'flex';
+    toggleArrow.innerHTML = '<img src=".images/right-pointer.svg" alt="Right arrow" />';
+  } else {
+    languageContainer.style.display = 'none';
+    toggleArrow.innerHTML = '<img src=".images/down-pointer.svg" alt="Down arrow" />';
+  }
+};

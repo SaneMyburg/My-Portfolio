@@ -191,19 +191,13 @@
         <p id="lets-connect">LET'S CONNECT</p>
         <ul class="socials about-socials">
           <li>
-            <a href="#"><img src="./images/github.svg" alt="Github logo" /></a>
+            <a href="https://github.com/SaneMyburg"><img src="./images/github.svg" alt="Github logo" /></a>
           </li>
           <li>
-            <a href="#"><img src="./images/linkedin.svg" alt="Linkedin Logo" /></a>
+            <a href="https://www.linkedin.com/in/sanemyburg/"><img src="./images/linkedin.svg" alt="Linkedin Logo" /></a>
           </li>
           <li>
-            <a href="#"><img src="./images/angellist.svg" alt="Angellist Logo" /></a>
-          </li>
-          <li>
-            <a href="#"><img src="./images/twitter.svg" alt="Twitter Logo" /></a>
-          </li>
-          <li>
-            <a href="#"><img src="./images/medium.svg" alt="Medium Logo" /></a>
+            <a href="https://twitter.com/SaneMyburg"><img src="./images/twitter.svg" alt="Twitter Logo" /></a>
           </li>
         </ul>
         <div><a class="see-projects resume" href="#">Get my resume</a></div>
@@ -214,9 +208,9 @@
           <ul class="list-type">
             <li>Languages</li>
           </ul>
-          <a id="down-arrow"><img src="./images/down-pointer.svg" alt="Down arrow" /></a>
+          <a id="down-arrow toggle-arrow" onclick="toggleLanguages()"><img src="./images/down-pointer.svg" alt="Down arrow" /></a>
         </div>
-        <div class="language-container">
+        <div class="language-container" id="language-container">
           <div class="list-languages">
             <ul class="list-type">
               <li id="language-image">
@@ -244,18 +238,61 @@
 
           </div>
         </div>
-        <div class="language" id="border-line">
+        <div class="language" id="border-line framework">
           <ul class="list-type">
             <li>Frameworks</li>
           </ul>
-          <a id="down-arrow" href="#"><img src="./images/right-pointer.svg" alt="Right arrow" /></a>
+          <a id="down-arrow toggle-arrow" onclick="toggleFrameworks()"><img src="./images/down-pointer.svg" alt="Right arrow" /></a>
+        </div>
+        <div id="framework-container" class="language-container">
+          <div class="list-languages">
+            <ul class="list-type">
+              <li id="language-image">
+                <img src="./images/icons8-react-js-100.png" alt="JavaScript badge" />
+              </li>
+              <li id="js-style">ReactJS</li>
+            </ul>
+          </div>
+          <div class="list-languages">
+            <ul class="list-type">
+              <li id="language-image">
+                <img src="./images/icons8-ruby-48.png" alt="JavaScript badge" />
+              </li>
+              <li id="js-style">Ruby on Rails</li>
+            </ul>
+          </div>
         </div>
         <div class="language" id="border-line">
           <ul class="list-type">
             <li>Skills</li>
           </ul>
-          <a id="down-arrow" href="#"><img src="./images/right-pointer.svg" alt="Right arrow" /></a>
+          <a id="down-arrow toggle-arrow" onclick="toggleSkills()"><img src="./images/down-pointer.svg" alt="Right arrow" /></a>
         </div>
+        <div id="skills-container" class="language-container">
+          <div class="list-languages">
+            <ul class="list-type">
+              <li id="language-image">
+                <img src="./images/cross-cultural.png" alt="JavaScript badge" />
+              </li>
+              <li id="js-style">Cross Cultural</li>
+            </ul>
+          </div>
+          <div class="list-languages">
+            <ul class="list-type">
+              <li id="language-image">
+                <img src="./images/teamwork.png" alt="JavaScript badge" />
+              </li>
+              <li id="js-style">Team Work</li>
+            </ul>
+          </div>
+          <div class="list-languages">
+            <ul class="list-type">
+              <li id="language-image">
+                <img src="./images/pair-programming.png" alt="JavaScript badge" />
+              </li>
+              <li id="js-style">Pair Programming</li>
+            </ul>
+          </div>
       </div>
 
 
